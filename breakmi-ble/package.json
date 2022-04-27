@@ -1,0 +1,26 @@
+{
+  "name": "breakmi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "breakmi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aes-cross": "^1.0.9",
+    "bleno": "^0.5.0",
+    "bluetooth-hci-socket": "^0.5.1",
+    "child-process": "^1.0.2",
+    "env2": "^2.2.2",
+    "figlet": "^1.5.0",
+    "noble": "^1.9.1",
+    "pg": "^8.5.1",
+    "prompt": "^1.1.0",
+    "socket-io": "^1.0.0",
+    "socket.io": "^3.1.2",
+    "socket.io-client": "^3.1.2",
+    "ws": "^7.4.3"
+  }
+}

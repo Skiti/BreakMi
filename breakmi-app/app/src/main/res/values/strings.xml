@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Breakmi</string>
+
+    <string name="text_detect">Detect connected fitness trackers.</string>
+    <string name="button_detect">DETECT</string>
+
+    <string name="text_choice_tracker">Choose target fitness tracker:</string>
+    <string name="radiobtn_eavesdropping">Eavesdropping</string>
+    <string name="text_choice_attacker">Choose attack:</string>
+    <string name="radiobtn_appimpersonation">App Impersonation</string>
+    <string name="button_choice">CONFIRM</string>
+    <string name="text_not_connected">Not connected</string>
+    <string name="text_connected">Connected</string>
+    <string name="text_title_eavesdropping">Eavesdropping in progress...</string>
+    <string name="text_title_appimp">App Impersonation in progress...</string>
+</resources>
