@@ -30,7 +30,9 @@ Instructions for Peripheral Impersonation:
 * Open the legitimate app that should automatically connect to the spoofed peripheral, instead of the legitimate one (stronger BLE signal)
 * The app fully trusts the spoofed peripheral
 
-[![demo1](http://img.youtube.com/vi/wBRDpL5WVsw/0.jpg)](http://www.youtube.com/watch?v=wBRDpL5WVsw)
+Video demonstration of the Tracker Impersonation on Mi Band 5:
+
+[![demo3](http://img.youtube.com/vi/wBRDpL5WVsw/0.jpg)](http://www.youtube.com/watch?v=wBRDpL5WVsw)
 
 ### Central (App) Impersonation Attack
 
@@ -46,7 +48,9 @@ Instructions for Central Impersonation:
 * Let the Authentication protocol run, afterwards the spoofed peripheral can be turned off
 * Read data from the protected characteristics of the legitimate BLE peripheral
 
-[![demo2](http://img.youtube.com/vi/3728qE_WOt8/0.jpg)](http://www.youtube.com/watch?v=3728qE_WOt8)
+Video demonstration of the Central Impersonation on Zepp Life and Mi Band 5:
+
+[![demo4](http://img.youtube.com/vi/3728qE_WOt8/0.jpg)](http://www.youtube.com/watch?v=3728qE_WOt8)
 
 ### Man-in-the-Middle Attack
 
@@ -64,7 +68,9 @@ Instructions for Man-in-the-Middle:
 * Start a workout session on the legitimate peripheral
 * The app will show a fake heart rate that was increased by 100 compared to the one shown by the peripheral
 
-[![demo3](http://img.youtube.com/vi/bUaY1kW6J7A/0.jpg)](http://www.youtube.com/watch?v=bUaY1kW6J7A)
+Video demonstration of the Man-in-the-Middle on Zepp Life and Mi Band 5:
+
+[![demo5](http://img.youtube.com/vi/bUaY1kW6J7A/0.jpg)](http://www.youtube.com/watch?v=bUaY1kW6J7A)
 
 ## Attacks Execution (Fitbit)
 
@@ -80,7 +86,9 @@ Fitbit trackers utilize a random static address. Thus, BLE address spoofing requ
 * Edit line 291, from `cmd.writeUInt8(0x00, 9);` to `cmd.writeUInt8(0x01, 9);`
 * Edit line 292, from `cmd.writeUInt8(0x00, 10);` to `cmd.writeUInt8(0x01, 10);`
 
-[![demo4](http://img.youtube.com/vi/_f5I8_xmTzs/0.jpg)](https://youtu.be/_f5I8_xmTzs)
+Video demonstration of the BLE Address Spoofing on Fitbit Charge 2:
+
+[![demo6](http://img.youtube.com/vi/_f5I8_xmTzs/0.jpg)](https://youtu.be/_f5I8_xmTzs)
 
 With this setup, BreakMi will be able to perform BLE address spoofing on Fitbit trackers. The changes on the BLE controller can be reverted by restarting the controller, or the machine. The changes on [*hci.js*](https://github.com/Skiti/BreakMi/blob/main/breakmi-ble/bleno/lib/hci-socket/hci.js) have to be manually reverted by editing the two aforementioned lines of code. Attacks on Xiaomi tracker will *NOT* work using Fitbit settings, and viceversa. If the error "Command Disallowed" appears, try running `advertising on` and then `advertising off` to fix it.
 
@@ -96,7 +104,9 @@ Instructions for Fitbit Peripheral Impersonation:
 * Open the legitimate app that should automatically connect to the spoofed peripheral, instead of the legitimate one (stronger BLE signal)
 * Fitbit peripheral logic is currently a work-in-progress
 
-[![demo5](http://img.youtube.com/vi/-EzbmsfTOSU/0.jpg)](https://youtu.be/-EzbmsfTOSU)
+Video demonstration of the Peripheral Impersonation on Fitbit Charge 2:
+
+[![demo7](http://img.youtube.com/vi/-EzbmsfTOSU/0.jpg)](https://youtu.be/-EzbmsfTOSU)
 
 ### Fitbit Central (App) Impersonation Attack
 
@@ -112,7 +122,9 @@ Instructions for Fitbit Central Impersonation:
 * Let the Authentication protocol run, afterwards the spoofed peripheral can be turned off
 * Select Notify Info (option 1), walk while wearing the tracker and uncencrypted Live Data info notification will appear (e.g., the fifth byte is the step count in hex format)
 
-[![demo6](http://img.youtube.com/vi/pYcxr5NyOSI/0.jpg)](https://youtu.be/pYcxr5NyOSI)
+Video demonstration of the App Impersonation on Fitbit Charge 2:
+
+[![demo8](http://img.youtube.com/vi/pYcxr5NyOSI/0.jpg)](https://youtu.be/pYcxr5NyOSI)
 
 ### Fitbit Man-in-the-Middle Attack
 
