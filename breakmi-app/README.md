@@ -45,7 +45,7 @@ BreakMi lacks a full implementation of Pairing v2. The BLE logic is already avai
 Pairing v2 requires a special value created by Xiaomi backend, at the end of Xiaomi Server-Side Pairing. BreakMi is missing the component that autonomously communicates with Xiaomi backend, and then sends back to the peripheral the special value, to complete Pairing v2.
 The API requests required to manually perform Xiaomi Server-Side Pairing backend can be found in [xiaomi-pairv2-webrequests.md](https://github.com/Skiti/BreakMi/blob/main/breakmi-app/xiaomi-pairv2-webrequests.md).
 
-Video demonstration of the Central Impersonation on Mi Band 5:
+Video demonstration of the Eavesdropping on Mi Band 5:
 
 [![demo1](http://img.youtube.com/vi/EWrDKHXjnJw/0.jpg)](http://www.youtube.com/watch?v=EWrDKHXjnJw)
 
