@@ -45,6 +45,14 @@ BreakMi lacks a full implementation of Pairing v2. The BLE logic is already avai
 Pairing v2 requires a special value created by Xiaomi backend, at the end of Xiaomi Server-Side Pairing. BreakMi is missing the component that autonomously communicates with Xiaomi backend, and then sends back to the peripheral the special value, to complete Pairing v2.
 The API requests required to manually perform Xiaomi Server-Side Pairing backend can be found in [xiaomi-pairv2-webrequests.md](https://github.com/Skiti/BreakMi/blob/main/breakmi-app/xiaomi-pairv2-webrequests.md).
 
+Video demonstration of the Central Impersonation on Mi Band 5:
+
+[![demo1](http://img.youtube.com/vi/EWrDKHXjnJw/0.jpg)](http://www.youtube.com/watch?v=EWrDKHXjnJw)
+
+Video demonstration of the Central Impersonation on Mi Band 5:
+
+[![demo2](http://img.youtube.com/vi/Hqcz2PmP7JI/0.jpg)](http://www.youtube.com/watch?v=Hqcz2PmP7JI)
+
 ### Fitbit Charge 2 Protocol (Charge 2 and its predecessors)
 
 Instructions for Eavesdropping:
@@ -52,7 +60,7 @@ Instructions for Eavesdropping:
 * Make sure the BLE peripheral is currently connected to the app
 * Open BreakMi app
 * Detect the connected peripheral
-* Deploy the Eavesdropping attack in a fully automated way, or ignore all the previous instructions below to deploy the Central Impersonation attack
+* Deploy the Eavesdropping attack in a fully automated way, or follow the additional instructions below to deploy the Central Impersonation attack
 
 BreakMi does not implement yet a fully automated Central Impersonation on Fitbit Charge 2 Protocol. This is how to manually perform the attack, outside the BreakMi app:
 * Perform Fitbit Server-Side Pairing by sending the web requests to Fitbit backend found in [fitbit-webrequests.md](https://github.com/Skiti/BreakMi/blob/main/breakmi-app/fitbit-webrequests.md), after filling them with the login credentials of a malicious Fitbit account
