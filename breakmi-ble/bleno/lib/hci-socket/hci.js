@@ -288,8 +288,8 @@ Hci.prototype.setAdvertisingParameters = function() {
   cmd.writeUInt16LE(advertisementInterval, 4); // min interval
   cmd.writeUInt16LE(advertisementInterval, 6); // max interval
   cmd.writeUInt8(0x00, 8); // adv type
-  cmd.writeUInt8(0x01, 9); // EDIT HERE: for Xiaomi change to 0x00, for Fitbit (random static address) change to 0x01
-  cmd.writeUInt8(0x01, 10); // EDIT HERE: for Xiaomi change to 0x00, for Fitbit (random static address) change to 0x01
+  cmd.writeUInt8(0x00, 9); // EDIT HERE: for Xiaomi change to 0x00, for Fitbit (random static address) change to 0x01
+  cmd.writeUInt8(0x00, 10); // EDIT HERE: for Xiaomi change to 0x00, for Fitbit (random static address) change to 0x01
   (new Buffer('000000000000', 'hex')).copy(cmd, 11); // direct addr
   cmd.writeUInt8(0x07, 17);
   cmd.writeUInt8(0x00, 18);
