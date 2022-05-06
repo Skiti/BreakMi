@@ -57,11 +57,11 @@ For more details, please refer to [README.md](https://github.com/Skiti/BreakMi/b
 
 ### SB Video Demos (Xiaomi)
 
-Video demonstration of the SB Central Impersonation on Mi Band 5:
+Video demonstration of the SB Eavesdropping on Mi Band 5:
 
 [![demo1](http://img.youtube.com/vi/EWrDKHXjnJw/0.jpg)](http://www.youtube.com/watch?v=EWrDKHXjnJw)
 
-Video demonstration of the SB Eavesdropping on Mi Band 5:
+Video demonstration of Server-Side Pairing on Mi Band 5:
 
 [![demo2](http://img.youtube.com/vi/Hqcz2PmP7JI/0.jpg)](http://www.youtube.com/watch?v=Hqcz2PmP7JI)
 
