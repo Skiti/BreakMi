@@ -122,7 +122,7 @@ Instructions for Fitbit Central Impersonation:
 * Let the Authentication protocol run, afterwards the spoofed peripheral can be turned off
 * Select Notify Info (option 1), walk while wearing the tracker and uncencrypted Live Data info notification will appear (e.g., the fifth byte is the step count in hex format)
 
-Video demonstration of the App Impersonation on Fitbit Charge 2:
+Video demonstration of the App Impersonation on Fitbit app and Fitbit Charge 2:
 
 [![demo8](http://img.youtube.com/vi/pYcxr5NyOSI/0.jpg)](https://youtu.be/pYcxr5NyOSI)
 
