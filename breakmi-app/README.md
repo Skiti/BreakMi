@@ -49,7 +49,7 @@ Video demonstration of the Eavesdropping on Mi Band 5:
 
 [![demo1](http://img.youtube.com/vi/EWrDKHXjnJw/0.jpg)](http://www.youtube.com/watch?v=EWrDKHXjnJw)
 
-Video demonstration of the Central Impersonation on Mi Band 5:
+Video demonstration of the Xiaomi Protocol v2 Server-Side Pairing on Mi Band 5, required for Central Impersonation:
 
 [![demo2](http://img.youtube.com/vi/Hqcz2PmP7JI/0.jpg)](http://www.youtube.com/watch?v=Hqcz2PmP7JI)
 
