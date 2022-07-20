@@ -6,7 +6,11 @@ BreakMi is a security assessment toolkit for BLE fitness trackers. More specific
 
 BreakMi implements three over-the-air attacks (Tracker Impersonation, App Impersonation, Man-in-the-Middle) and two Android remote software-based attacks (Eavesdropping, App Impersonation). The toolkit works with minimal resources: a computer, Python (+ libraries), Node.js (+ libraries), an Android phone (no root required), and a USB BLE dongle (in order to change BLE mac address for address spoofing). BreakMi also offers some additional features, such as scripts to interact with the trackers and the companion apps, Frida hooks and capture files.
 
-To learn more about our work, please read the paper "BreakMi: Reversing, Exploiting and Fixing Xiaomi Fitness Tracking Ecosystem" published on TCHES 2022.
+To learn more about our work, please refer to the paper "BreakMi: Reversing, Exploiting and Fixing Xiaomi Fitness Tracking Ecosystem" published on TCHES 2022.
+
+## (Update) New Xiaomi Auth Protocol
+
+During 2021, Xiaomi started pushing a new firmware update for their fitness trackers (we confirmed this for Mi Band 5 and 6), that replaces the protocols we evaluated in this work with new ones. If a tracker is updated to that protocol, BreakMi should not work anymore, even though it might be possible to extend it to support the same attacks on the new protocol.
 
 ## OTA Attacks
 

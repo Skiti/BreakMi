@@ -7,8 +7,9 @@ The APK file for the app can be found in [breakmi.apk](https://github.com/Skiti/
 
 ## Prerequisites and Setup
 
-* Mobile phone running Android lower than version 12 (WIP Android 12)
-* Installation of Zepp Life or Zepp companion app
+* Mobile phone running Android lower than version 12 (WIP Android 12, where the additional dangerous runtime permissions BLUETOOTH\_SCAN and BLUETOOTH\_CONNECT need to be declared in the Manifest and accepted by the user)
+* For Xiaomi, installation of Zepp Life or Zepp companion app (we tested Mi Fit version 4.8.1, which was then renamed to Zepp Life, and Zepp version 5.9.2, but the attacks target Android and the application-layer protocol so they are independent from the app version)
+* For Fitbit, installation of Fitbit companion app (we tested Fitbit version 3.54.1, but the attacks target Android and the application-layer protocol so they are independent from the app version)
 * Installation of BreakMi app
 * Fitness tracker compatible with the attacks as a BLE peripheral (e.g., Mi Band 2, Mi Band 3, Amazfit Band 2, Mi Band 4, Mi Band 5, Fitbit Charge 2)
 * Legitimate pairing between the peripheral and the companion app
@@ -18,7 +19,7 @@ The APK file for the app can be found in [breakmi.apk](https://github.com/Skiti/
 ### Xiaomi Protocol v1 (Mi Band 2, Mi Band 3, Amazfit Band 2)
 
 Instructions for Eavesdropping and Central Impersonation:
-* Open the companion app
+* Open the Zepp or Zepp Life companion app
 * Make sure the BLE peripheral is currently connected to the app
 * Open BreakMi app
 * Detect the connected peripheral
@@ -29,7 +30,7 @@ During Central Impersonation, BreakMi will re-pair with the tracker (not necessa
 ### Xiaomi Protocol v2 (Mi Band 4, Mi Band 5, Mi Band 6)
 
 Instructions for Eavesdropping and Central Impersonation:
-* Open the companion app
+* Open the Zepp or Zepp Life companion app
 * Make sure the BLE peripheral is currently connected to the app
 * Open BreakMi app
 * Detect the connected peripheral
@@ -48,7 +49,7 @@ The API requests required to manually perform Xiaomi Server-Side Pairing backend
 ### Fitbit Charge 2 Protocol (Charge 2 and its predecessors)
 
 Instructions for Eavesdropping:
-* Open the companion app
+* Open the Fitbit companion app
 * Make sure the BLE peripheral is currently connected to the app
 * Open BreakMi app
 * Detect the connected peripheral

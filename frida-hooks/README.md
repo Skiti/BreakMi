@@ -5,15 +5,15 @@
 * Mobile phone running Android
 * Root access to run Frida on the phone
 * Installation of Frida on the phone and the attacking machine
-* Installation of Zepp Life or Zepp companion app
+* Installation of Zepp Life version 4.8.1 or Zepp version 5.9.2 companion app
 * Fitness tracker compatible with the attacks as a BLE peripheral (e.g., Mi Band 2, Mi Band 3, Amazfit Band 2, Mi Band 4, Mi Band 5, Fitbit Charge 2)
 * Legitimate pairing between the peripheral and the companion app
 
 ## Hooking Companion Apps
 
-Zepp Life and Zepp utilize the same proprietary APIs, but their names slightly change (due to code obfuscation in Zepp Life). Thus, each app has it's own hooking file.
+Zepp Life and Zepp utilize the same proprietary APIs, but their names slightly change (due to code obfuscation in Zepp Life). Thus, each app has it's own hooking file and due to obfuscation, it is likely that those hooks will break in different app versions (so it will be necessary to manually search in the decompiled apk code of the app).
 How to run the Frida hooks:
-* Edit [breakmi-hooks.py](https://github.com/Skiti/BreakMi/blob/main/frida-hooks/breakmi-hooks.js) according to the target companion app
+* Edit [breakmi-hooks.py](https://github.com/Skiti/BreakMi/blob/main/frida-hooks/breakmi-hooks.py) according to the target companion app
   - Zepp Life: `device.spawn(["com.xiaomi.hm.health"])` and `open("zepplife-breakmi-hooks.js")`
   - Zepp: `device.spawn(["com.huami.watch.hmwatchmanager"])` and `open("zepp-breakmi-hooks.js")`
 * Run `python breakmi-hooks.py`
