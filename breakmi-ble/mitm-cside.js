@@ -233,7 +233,7 @@ function interact() {
 	
 }
 
-function replay(socket) {
+function replayMiband(socket) {
 	
 	authCharacteristic.subscribe(function(error) {
 		console.log('\nEnabled notifications on Auth Characteristic');
@@ -267,17 +267,17 @@ function replay(socket) {
 	function authentication() {
 		console.info("\nPerforming Authentication \n");
 		if (getProtocolVersion() == 1)
-		wrongChallengeRequest();
+			wrongChallengeRequest();
 		else if (getProtocolVersion() == 2)
-		correctChallengeRequest();
+			correctChallengeRequest();
 	}
 	
 	function correctChallengeRequest() {
 		var opcodeBuf;
 		if (getProtocolVersion() == 1) {
-			opcodeBuf = new Buffer([0x02,0x00]);
+				opcodeBuf = new Buffer([0x02,0x00]);
 			} else if (getProtocolVersion() == 2) {
-			opcodeBuf = new Buffer([0x82,0x00,0x02]);
+				opcodeBuf = new Buffer([0x82,0x00,0x02]);
 		}
 		authCharacteristic.write(opcodeBuf, true, function(error) {
 			console.log('Sent Challenge Request');
@@ -298,7 +298,7 @@ function replay(socket) {
 	
 }
 
-function sendChallengeSolution(solution) {
+function sendMibandChallengeSolution(solution) {
 	var opcodeBuf;
 	if (getProtocolVersion() == 1)
 		opcodeBuf = new Buffer([0x03,0x00]);
@@ -311,6 +311,7 @@ function sendChallengeSolution(solution) {
 	});
 }
 
+// TODO add communication after receiving the Auth Successful socket message
 function communication(socket) {
 
 	console.log("communication");
