@@ -8,7 +8,7 @@
 * Fitness tracker not updated to the new Xiaomi protocols deployed from 2021 onwards
 * Legitimate pairing between the peripheral and the companion app
 * Attacking machine with administrative privileges (our instructions refer to Ubuntu distributions, but Windows and iOS should work as they are compatible with Bleno and Noble and should allow for changes to the BLE interface)
-* Installation of [Bleno](https://github.com/noble/bleno) vewrsion 0.5.0 and [Noble](https://github.com/noble/noble) version 1.9.1 modules
+* Installation of [Bleno](https://github.com/noble/bleno) version 0.5.0 and [Noble](https://github.com/noble/noble) version 1.9.1 modules
 * Installation of [Node](https://nodejs.org/en/) version 8.9.0 for compatibility issues with the *bluetooth-hci-socket* module used by Bleno and Noble
   - Node version can be downgraded through nvm (`npm install nvm`,`nvm install 8.9.0`,`nvm use 8.9.0`)
 * Installation of [Socket.io](https://socket.io/), and port 3000/3001 free (can be edited)
